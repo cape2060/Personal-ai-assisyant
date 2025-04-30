@@ -40,3 +40,20 @@ pip install pyttsx3 SpeechRecognition wikipedia pywhatkit requests
 pip install pipwin
 pipwin install pyaudio
 ```
+### 🧠 Setup Local LLM with Ollama (for AI Chat)
+1.Download Ollama: https://ollama.com/download
+
+2.Open a terminal and run:
+```bash
+ollama pull llama3.2
+```
+3.Start the server:
+```bash
+ollama run llama3
+```
+### ▶️  How to Use
+1.Clone or download this repo:
+```bash
+git clone https://github.com/cape2062/Personal-ai-assistant.git
+
+
