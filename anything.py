@@ -27,7 +27,7 @@ def sunne():
             voice=listener.listen(source)
             text=listener.recognize_google(voice,language='en-ne')
             
-            print(text)
+            print("You:",text)
 
     except:
         print(f"Could not request results")
