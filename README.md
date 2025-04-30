@@ -33,8 +33,10 @@ A Python-based desktop voice assistant that uses speech recognition, text-to-spe
 
 ```bash
 pip install pyttsx3 SpeechRecognition wikipedia pywhatkit requests
+```
 
 ### Optional: If you face errors with pyaudio, install with:
-
+```bash
 pip install pipwin
 pipwin install pyaudio
+```
