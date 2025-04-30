@@ -24,6 +24,7 @@ A Python-based desktop voice assistant that uses speech recognition, text-to-spe
 - Python 3.8 or higher
 - Microphone (for voice commands)
 - Firefox browser installed
+  if not then remove this 3 code line and then put 1 line instead of that 3 and the default browser will run. 
 - Zoom installed (for `open/close zoom`)
 - [Ollama](https://ollama.com/download) installed and running
 
@@ -54,6 +55,36 @@ ollama run llama3
 ### ▶️  How to Use
 1.Clone or download this repo:
 ```bash
-git clone https://github.com/cape2062/Personal-ai-assistant.git
+git clone https://github.com/cape2060/Personal-ai-assisyant.git
+```
+2.Run the assistant:
+```bash
+python anything.py
+```
+3.Speak any of the supported commands (listed below). Examples:
 
+-"Open YouTube"
+
+-"Play Despacito"
+
+-"What time is it?"
+
+-"Search Albert Einstein"
+
+-"Open Zoom"
+
+-"Hello Alexa" → Starts chatting with LLaMA via Ollama
+### 🧾 Supported Commands
+
+Voice Command           Example	Description
+"Open YouTube"	        Launch YouTube in Firefox
+"Play [song name]"	    Play a song/video on YouTube
+"Search [topic]"	      Gives a short Wikipedia summary
+"What time is it"	      Current time
+"What is today’s date"	Current date
+"Open Zoom"	            Starts Zoom
+"Close Zoom"	          Closes Zoom app
+"Close browser"	        Closes Microsoft Edge
+"Hello Alexa"         	Starts AI conversation via Ollama
+"Exit"	                Exits the assistant
 
