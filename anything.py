@@ -86,7 +86,7 @@ def main():
                 print(e.options)  # Print the options
         elif "open zoom" in command:
             bolne("Opening zoom...")
-            path=r"C:\Users\HP\AppData\Roaming\Zoom\bin\Zoom.exe"
+            path=r"your application loication where zoom exe file is located"
             os.startfile(path)
             time.sleep(5)
         elif "close zoom" in command:
