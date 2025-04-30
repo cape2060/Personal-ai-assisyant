@@ -24,8 +24,15 @@ A Python-based desktop voice assistant that uses speech recognition, text-to-spe
 - Python 3.8 or higher
 - Microphone (for voice commands)
 - Firefox browser installed
-  if not then remove this 3 code line and then put 1 line instead of that 3 and the default browser will run. 
+  if not then remove this 3 code line and then put 1 line instead of that 3 and the default browser will run.
+  remove:-
+  firefox_path = r"C:\Program Files\Mozilla Firefox\firefox.exe"
+  webbrowser.register('firefox', None, webbrowser.BackgroundBrowser(firefox_path))
+  webbrowser.get('firefox').open(site[1])
+  add:-
+  webbrowser.open(site[1])
 - Zoom installed (for `open/close zoom`)
+  here you can add as many application as you want by adding 2 lines of code for each application.
 - [Ollama](https://ollama.com/download) installed and running
 
 ---
