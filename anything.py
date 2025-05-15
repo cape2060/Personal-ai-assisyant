@@ -39,7 +39,7 @@ def close(app):
         bolne(f"Closing {app}...")
     except Exception as e:
         print(f"Error: {e}")
-        bolne("Sorry, could not close the application.")
+        bolne("Sorry, appication is not closed.")
 def main():
     while 1:
         command =sunne()
