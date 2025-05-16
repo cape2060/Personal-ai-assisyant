@@ -1,6 +1,6 @@
 # 🧠 Alexa Voice Assistant (Offline + Voice Commands)
 
-A Python-based desktop voice assistant that uses speech recognition, text-to-speech, and local AI (via [Ollama](https://ollama.com/)) to perform tasks like browsing the web, playing YouTube videos, checking the date/time, searching Wikipedia, and interacting with a local LLM like LLaMA 3.
+A Python-based desktop voice assistant that uses speech recognition, text-to-speech, and local AI (via [Ollama](https://ollama.com/)) to perform tasks like browsing the web, playing YouTube videos, checking the date/time, searching Wikipedia, and interacting with a local LLM like LLaMA 3.It also includes hacking/utility tools like a port scanner, subdomain finder, and background remover.
 
 ---
 
@@ -12,6 +12,9 @@ A Python-based desktop voice assistant that uses speech recognition, text-to-spe
 - 📅 Tell current time and date
 - 📚 Wikipedia search (short summary)
 - 🎵 Play YouTube videos using `pywhatkit`
+- 🛡️ Port Scanner (find open ports on any IP/domain)
+- 🌐 Subdomain Finder (using DNS brute-force)
+- 🖼️ Background Remover (remove image backgrounds)
 - 💬 Chat with a local LLM via [Ollama](https://ollama.com/)
 - 🧩 Open and close desktop applications (Zoom, browser, etc.)
 
@@ -40,7 +43,7 @@ A Python-based desktop voice assistant that uses speech recognition, text-to-spe
 ### 📦 Install Dependencies
 
 ```bash
-pip install pyttsx3 SpeechRecognition wikipedia pywhatkit requests
+pip install pyttsx3 SpeechRecognition wikipedia pywhatkit requests dnspython rembg
 ```
 
 ### Optional: If you face errors with pyaudio, install with:
@@ -79,6 +82,12 @@ python anything.py
 -"Search Albert Einstein"
 
 -"Open Zoom"
+
+-"subdomain"
+
+-"scan"
+
+-"remove background"
 
 -"Hello Alexa" → Starts chatting with LLaMA via Ollama
 ### 🧾 Supported Commands
