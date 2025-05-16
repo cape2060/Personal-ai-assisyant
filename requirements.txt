@@ -3,3 +3,5 @@ SpeechRecognition
 wikipedia
 pywhatkit
 requests
+rembg
+dnspython
