@@ -7,6 +7,9 @@ import datetime
 import os
 import time
 import requests
+from portscanner import scanner, checking
+from remove import remover
+from subdomain import nikalne,find
 
 
 listener =sr.Recognizer()
@@ -29,8 +32,10 @@ def sunne():
             
             print("You:",text)
 
-    except:
-        print(f"Could not request results")
+    except Exception as e:
+        print("Could not hear you properly,please speak again clearly")
+        bolne("Could not hear you properly,please speak again clearly")
+        return sunne()
     return text
 def close(app):
     try:
@@ -39,7 +44,7 @@ def close(app):
         bolne(f"Closing {app}...")
     except Exception as e:
         print(f"Error: {e}")
-        bolne("Sorry, appication is not closed.")
+        bolne("Sorry, could not close the application.")
 def main():
     while 1:
         command =sunne()
@@ -86,9 +91,79 @@ def main():
                 print(e.options)  # Print the options
         elif "open zoom" in command:
             bolne("Opening zoom...")
-            path=r"your application loication where zoom exe file is located"
+            path=r"C:\Users\HP\AppData\Roaming\Zoom\bin\Zoom.exe"
             os.startfile(path)
             time.sleep(5)
+        elif "scan" in command:
+            print("Enter the target ip address or domain name:")
+            bolne("Enter the target ip address or domain name")
+            target=sunne()
+            length=checking(target)
+            while True:   
+                if length==True:
+                    print("Valid IP address")
+                    bolne("Valid IP address")
+                    break
+                else:
+                    print("Invalid IP address")
+                    bolne("Invalid IP address")
+                    bolne("Please enter a valid IP address by typing it")
+                    target=input()
+                    length=checking(target)
+                
+
+            print("Enter the port you want yo scan from 1 to 65535")
+            bolne("Enter the port you want yo scan from 1 to 65535(starting port)")
+            starting=sunne()
+            print("Enter the port you want yo scan from 1 to 65535")
+            bolne("Enter the port you want yo scan from 1 to 65535(ending port)")
+            ending=sunne()
+            bolne("Scanning...")
+            scanner(target, starting, ending)
+            print("Scanning completed.")
+            bolne("Scanning completed.")
+        elif "remove background" in command:
+            print("Enter the location of image:")
+            bolne("Enter the location of image:")
+            inputpath=input().strip()#use the hello folder as input as well as outputth path
+            if not os.path.isfile(inputpath):
+                print("File not found")
+                bolne("File not found")
+                exit(1)
+            print("Enter the location where you want to save the image:")   
+            bolne("Enter the location where you want to save the image:")
+            outputpath=input().strip()#use location eg:c:/hello/ball.png
+          
+            bolne("Removing background...")
+            print("Removing background...")
+            
+           
+            remover(inputpath,outputpath)
+            print("Background removed successfully.")
+            bolne("Background removed successfully.")
+        elif "subdomain"in command:
+            bolne("Enter the name of domain")
+            domain=sunne().strip()
+            bolne("Enter the wordlist path")
+            filepath=input("ENter the wordlidt path:").strip()
+            
+            if not os.path.isfile(filepath):
+                print("File not found")
+                bolne("File not found")
+                exit(1)
+            print("Extracting domain form list")
+            bolne("Extracting domain form list")
+            wordlist=nikalne(filepath)
+            a=find(domain, wordlist)
+            
+
+            if a:
+                print("Subdomian found")
+                for subdomain in a:
+                    print(f"{subdomain}")
+            else:
+                print("No subdomain found")
+
         elif "close zoom" in command:
             close("Zoom.exe")
         elif "close browser" in command:
@@ -104,6 +179,7 @@ def assistant():
         input = sunne()
         if input.lower() in {"exit"}:
             print("Assistant: Goodbye!")
+            bolne("Goodbye!,have a nice day.")
             break
         response = alexa(input)
         print("Assistant:", response)
