@@ -10,6 +10,7 @@ import requests
 from portscanner import scanner, checking
 from remove import remover
 from subdomain import nikalne,find
+from hashcraker import hash_type, md5_hashchecker, sha1_hashchecker, sha256_hashchecker, sha512_hashchecker, sha224_hashchecker, sha384_hashchecker
 
 
 listener =sr.Recognizer()
@@ -163,6 +164,43 @@ def main():
                     print(f"{subdomain}")
             else:
                 print("No subdomain found")
+        elif "hash" in command:
+            print("Welcome to the Hash Cracker!")
+            bolne("Welcome to the Hash Cracker!")
+            print("ENter the hash you want to crack:")
+            bolne("Enter the hash you want to crack:")
+            hash=input()
+            
+            bolne("Checking hash type...")
+            integer=hash_type(hash)
+        
+            print("Do you want to crack the hash (y e s/no)")
+            bolne("Do you want to crack the hash yes or no")
+            answer=sunne()
+            answer=answer.lower()
+            if answer == "y e s":
+                print("Please provide the path to your custom wordlist:")
+                bolne("Please provide the path to your custom wordlist:")
+                list = input()
+            
+            else:
+                sunne()
+            
+            if integer==1:
+                md5_hashchecker(list,hash)
+            elif integer==2:
+                sha1_hashchecker(list,hash)
+            elif integer==3:
+                sha256_hashchecker(list,hash)
+            elif integer==4:
+                sha512_hashchecker(list,hash)
+            elif integer==5:
+                sha224_hashchecker(list,hash)
+            elif integer==6:
+                sha384_hashchecker(list,hash)
+            else:
+                print("I do not know how to crack this hash type")
+                bolne("I do not know how to crack this hash type") 
 
         elif "close zoom" in command:
             close("Zoom.exe")
