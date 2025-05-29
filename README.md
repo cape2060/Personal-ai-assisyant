@@ -14,6 +14,7 @@ A Python-based desktop voice assistant that uses speech recognition, text-to-spe
 - 🎵 Play YouTube videos using `pywhatkit`
 - 🛡️ Port Scanner (find open ports on any IP/domain)
 - 🌐 Subdomain Finder (using DNS brute-force)
+- 🔐 Hash Cracker (crack MD5, SHA1, SHA256 hashes using dictionary attack)
 - 🖼️ Background Remover (remove image backgrounds)
 - 💬 Chat with a local LLM via [Ollama](https://ollama.com/)
 - 🧩 Open and close desktop applications (Zoom, browser, etc.)
@@ -86,6 +87,8 @@ python anything.py
 -"subdomain"
 
 -"scan"
+
+-"cracking hash"
 
 -"remove background"
 
