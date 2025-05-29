@@ -5,3 +5,4 @@ pywhatkit
 requests
 rembg
 dnspython
+hashlib
