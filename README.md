@@ -61,7 +61,7 @@ ollama pull llama3.2
 ```
 3.Start the server:
 ```bash
-ollama run llama3
+ollama run llama3.2
 ```
 ### ▶️  How to Use
 1.Clone or download this repo:
