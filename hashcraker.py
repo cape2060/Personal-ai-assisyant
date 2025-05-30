@@ -73,7 +73,7 @@ def sha1_hashchecker(list,hash):
             if word =="":
                 print("The word is empty, skipping...")
                 bolne("The word is empty, skipping...")
-                exit()
+                
                         
             if hashed == hash:
                 print(f"[+] Hash cracked! The word is: {word}")
