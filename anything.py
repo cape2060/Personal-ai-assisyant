@@ -11,7 +11,7 @@ from portscanner import scanner, checking
 from remove import remover
 from subdomain import nikalne,find
 from hashcraker import hash_type, md5_hashchecker, sha1_hashchecker, sha256_hashchecker, sha512_hashchecker, sha224_hashchecker, sha384_hashchecker
-
+from passgen import generator
 
 listener =sr.Recognizer()
 
@@ -201,7 +201,10 @@ def main():
             else:
                 print("I do not know how to crack this hash type")
                 bolne("I do not know how to crack this hash type") 
-
+        elif "password" in command:
+            print("Generating a random password...")
+            bolne("Generating a random password...")
+            generator()
         elif "close zoom" in command:
             close("Zoom.exe")
         elif "close browser" in command:
