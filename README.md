@@ -16,6 +16,7 @@ A Python-based desktop voice assistant that uses speech recognition, text-to-spe
 - 🌐 Subdomain Finder (using DNS brute-force)
 - 🔐 Hash Cracker (crack MD5, SHA1, SHA256 hashes using dictionary attack)
 - 🖼️ Background Remover (remove image backgrounds)
+- 🔑 Secure Password Generator (generate strong random passwords with voice command)
 - 💬 Chat with a local LLM via [Ollama](https://ollama.com/)
 - 🧩 Open and close desktop applications (Zoom, browser, etc.)
 
@@ -89,6 +90,8 @@ python anything.py
 -"scan"
 
 -"cracking hash"
+
+-"Generate password"
 
 -"remove background"
 
