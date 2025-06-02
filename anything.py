@@ -174,11 +174,11 @@ def main():
             bolne("Checking hash type...")
             integer=hash_type(hash)
         
-            print("Do you want to crack the hash (y e s/no)")
+            print("Do you want to crack the hash (yes/no)")
             bolne("Do you want to crack the hash yes or no")
-            answer=sunne()
+            answer=input()
             answer=answer.lower()
-            if answer == "y e s":
+            if answer == "yes":
                 print("Please provide the path to your custom wordlist:")
                 bolne("Please provide the path to your custom wordlist:")
                 list = input()
