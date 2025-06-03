@@ -31,7 +31,10 @@ def generator():
     fourthpart=string.punctuation
 
     total=firstpart+secondpart+thirdpart+fourthpart
-    password = ''.join(random.sample(total, 18))
+    print("Enter the length of the password you want to generate:")
+    bolne("Enter the length of the password you want to generate:")
+    length_pass=int(input())
+    password = ''.join(random.sample(total, length_pass))
     print(f"Your password is: {password}")
     bolne(f"Your password is: {password}")
     print("You want to store this password in a file? (yes/no)")
@@ -49,8 +52,8 @@ def generator():
     if choice == 'yes':
         with open("passlist.txt", "a") as file:
             file.write(store+"\n")
-        print("Password stored in password.txt")
-        bolne("Password stored in password.txt")
+        print("Password stored in passlist.txt")
+        bolne("Password stored in passlist.txt")
     else:
         print("Password not stored.")
         bolne("Password not stored.")
