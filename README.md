@@ -16,6 +16,8 @@ A Python-based desktop voice assistant that uses speech recognition, text-to-spe
 - 🌐 Subdomain Finder (using DNS brute-force)
 - 🔐 Hash Cracker (crack MD5, SHA1, SHA256 hashes using dictionary attack)
 - 🖼️ Background Remover (remove image backgrounds)
+- 📤 Gmail Sender with Attachment
+      for this first you need to make an smtp.gmail.com account and password then use that credential in this script.
 - 🔑 Secure Password Generator (generate strong random passwords with voice command and store in file with user define length of passowrd)
 - 💬 Chat with a local LLM via [Ollama](https://ollama.com/)
 - 🧩 Open and close desktop applications (Zoom, browser, etc.)
@@ -92,6 +94,8 @@ python anything.py
 -"cracking hash"
 
 -"Generate password"
+
+-"send email"
 
 -"remove background"
 
