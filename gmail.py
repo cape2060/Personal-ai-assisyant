@@ -65,8 +65,8 @@ def data():
     bolne("Sending email...")
     server = "smtp.gmail.com"
     port = 587  
-    user = "saitamap66@gmail.com"
-    password = "unvr zopi zfkv juke"
+    user = "Your smtp gmail account"
+    password = "smtp gmail password"
 
     with smtplib.SMTP(server, port) as server:
         server.starttls() 
