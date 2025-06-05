@@ -12,7 +12,7 @@ from remove import remover
 from subdomain import nikalne,find
 from hashcraker import hash_type, md5_hashchecker, sha1_hashchecker, sha256_hashchecker, sha512_hashchecker, sha224_hashchecker, sha384_hashchecker
 from passgen import generator
-
+from gmail import data
 listener =sr.Recognizer()
 
 def bolne(text):
@@ -205,6 +205,19 @@ def main():
             print("Generating a random password...")
             bolne("Generating a random password...")
             generator()
+        elif "send email" in command:
+            print("Welcome to the Email Sender!")
+            bolne("Welcome to the Email Sender!")
+          
+            print("Do you want to send an email? (yes/no): ")
+            bolne("Do you want to send an email? (yes/no): ")
+            ball = input().strip().lower()
+
+            if "y" in ball:
+                data()
+            else:
+                print("Exiting the Email Sender. Goodbye!")
+                bolne("Exiting the Email Sender. Goodbye!")
         elif "close zoom" in command:
             close("Zoom.exe")
         elif "close browser" in command:
