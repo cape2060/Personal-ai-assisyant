@@ -13,6 +13,7 @@ from subdomain import nikalne,find
 from hashcraker import hash_type, md5_hashchecker, sha1_hashchecker, sha256_hashchecker, sha512_hashchecker, sha224_hashchecker, sha384_hashchecker
 from passgen import generator
 from gmail import data
+from brutforce import details, brutforce
 listener =sr.Recognizer()
 
 def bolne(text):
@@ -208,7 +209,8 @@ def main():
         elif "send email" in command:
             print("Welcome to the Email Sender!")
             bolne("Welcome to the Email Sender!")
-          
+            print("This tool sends an email with attachments.")
+            bolne("This tool sends an email with attachments.")
             print("Do you want to send an email? (yes/no): ")
             bolne("Do you want to send an email? (yes/no): ")
             ball = input().strip().lower()
@@ -218,6 +220,11 @@ def main():
             else:
                 print("Exiting the Email Sender. Goodbye!")
                 bolne("Exiting the Email Sender. Goodbye!")
+        elif "brute force" in command:
+            url,username,name,name1,text,loc=details()
+            print("Brutforcing the password...")
+            bolne("Brutforcing the password...")
+            brutforce(url, username, name, name1,text, loc)
         elif "close zoom" in command:
             close("Zoom.exe")
         elif "close browser" in command:
