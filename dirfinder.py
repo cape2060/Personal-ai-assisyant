@@ -56,7 +56,7 @@ def bypass403(url):
         bolne("Enter your choice:") 
         choice = input().strip()
         # WSL path to your bash script
-        script_path = "/mnt/d/Personal-ai-assisyant/bypass.sh"
+        script_path = "/mnt/d/Personal-ai-assisyant/bypass.sh"#your bypass.sh script location
         command = f"bash -c \"'{script_path}' -u {url} --{choice}\""
 
         
