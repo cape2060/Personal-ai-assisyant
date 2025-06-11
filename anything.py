@@ -6,6 +6,8 @@ import pywhatkit
 import datetime
 import os
 import time
+from colorama import Fore, Style
+from concurrent.futures import ThreadPoolExecutor as tpe
 import requests
 from portscanner import scanner, checking
 from remove import remover
@@ -14,6 +16,7 @@ from hashcraker import hash_type, md5_hashchecker, sha1_hashchecker, sha256_hash
 from passgen import generator
 from gmail import data
 from brutforce import details, brutforce
+from dirfinder import wordset, bypass403 , ok_200, forbidden_403
 listener =sr.Recognizer()
 
 def bolne(text):
@@ -225,6 +228,31 @@ def main():
             print("Brutforcing the password...")
             bolne("Brutforcing the password...")
             brutforce(url, username, name, name1,text, loc)
+        elif "find directory" in command:
+            print("Enter the target url:")
+            bolne("Enter the target url:")
+            url=input().strip()
+            print("Enter the wordlist file path:")
+            bolne("Enter the wordlist file path:")
+            dir=input().strip()
+            print("Starting directory search...")
+            bolne("Starting directory search...")
+            wordset(url, dir)
+            print(Fore.CYAN + f"200 ok directories: {ok_200}" + Style.RESET_ALL)    
+            print(Fore.RED + f"403 Forbidden directories: {forbidden_403}" + Style.RESET_ALL) 
+            print("Directory search completed.")
+            bolne("Directory search completed.")
+            print("You want to bypass the 403 directories? (yes/no)")
+            bolne("You want to bypass the 403 directories? (yes/no)")
+            choice = input().strip().lower()
+            if 'y' in choice:
+                print("Give me the url by adding th 403 dir find in search in list(e.g. https://example.com/403dir):")
+                bolne("Give me the url by adding the 403 dir found in search in list")
+                url1 = input().strip()
+                print("Bypassing the 403 directory...")
+                bolne("Bypassing the 403 directory...")
+                bypass403(url1)
+
         elif "close zoom" in command:
             close("Zoom.exe")
         elif "close browser" in command:
