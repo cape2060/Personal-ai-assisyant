@@ -48,7 +48,7 @@ A Python-based desktop voice assistant that uses speech recognition, text-to-spe
 ### 📦 Install Dependencies
 
 ```bash
-pip install pyttsx3 SpeechRecognition wikipedia pywhatkit requests dnspython rembg
+pip install pyttsx3 SpeechRecognition wikipedia pywhatkit requests dnspython rembg angr
 ```
 
 ### Optional: If you face errors with pyaudio, install with:
