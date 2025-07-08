@@ -21,6 +21,7 @@ A Python-based desktop voice assistant that uses speech recognition, text-to-spe
 - 🔑 Secure Password Generator (generate strong random passwords with voice command and store in file with user define length of passowrd)
 - 💬 Chat with a local LLM via [Ollama](https://ollama.com/)
 - 🧩 Open and close desktop applications (Zoom, browser, etc.)
+- 🔍 Reverse Engineering Tool: Automatically find passwords or keys inside binaries using symbolic execution with angr, featuring voice feedback, output saving, and timed analysis.
 
 ---
 
@@ -98,6 +99,8 @@ python anything.py
 -"send email"
 
 -"remove background"
+
+-"reverse engineering"
 
 -"Hello Alexa" → Starts chatting with LLaMA via Ollama
 ### 🧾 Supported Commands
