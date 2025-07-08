@@ -17,6 +17,9 @@ from passgen import generator
 from gmail import data
 from brutforce import details, brutforce
 from dirfinder import wordset, bypass403 , ok_200, forbidden_403
+from autorevengi import check, check1
+
+
 listener =sr.Recognizer()
 
 def bolne(text):
@@ -252,7 +255,31 @@ def main():
                 print("Bypassing the 403 directory...")
                 bolne("Bypassing the 403 directory...")
                 bypass403(url1)
+        elif "reverse engineer" in command:
+            print("\033[1;32mEnter the path of file for reverse engineering and find the password:")
+            bolne("Enter the path of file for reverse engineering and find the password:")
+            path=input().strip()
+            print("\033[92mDo you want to put the address of the line where correct password is printed or use that string instead(string/address)")
+            bolne("Do you want to put the address of the line where correct password is printed or use that string instead(string/address)")
+            choice = input().strip().lower()
+            if 'string' in choice:
+                print("\033[92mEnter the string which is printed when correct password is entered:")
+                bolne("Enter the string which is printed when correct password is entered:")
+                string = input().strip()
+                def correct(input):
+                    return string.encode() in input.posix.dumps(1)
+                print("\033[92mStarting reverse engineering...")
+                bolne("Starting reverse engineering...")  
+                
+                check(path,correct)
 
+            else:
+                print("\033[92mEnter the address of the line where correct password is printed(0x123123123):")
+                bolne("Enter the address of the line where correct password is printed:")
+                address = input().strip()
+                print("\033[92mStarting reverse engineering...")
+                bolne("Starting reverse engineering...")    
+                check1(path,address)
         elif "close zoom" in command:
             close("Zoom.exe")
         elif "close browser" in command:
