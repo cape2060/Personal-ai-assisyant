@@ -26,7 +26,7 @@ function banner(){
 	echo "💀💀💀💀💀💀💀💀💀"
 	echo -e "💀$green Have a beer🍺💀 $end"
 	echo "💀💀💀💀💀💀💀💀💀"
-	echo -e "     ${cyan}- twitter.com/Dheerajmadhukar : @me_dheeraj${end}"
+	echo -e "     ${cyan}- github.com/cape2060:::StillNet${end}"
 }
 function usage(){
         printf "Usage:\n"
