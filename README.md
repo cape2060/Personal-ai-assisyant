@@ -13,7 +13,7 @@ A Python-based desktop voice assistant that uses speech recognition, text-to-spe
 - 📚 Wikipedia search (short summary)
 - 🎵 Play YouTube videos using `pywhatkit`
 - 🛡️ Port Scanner (find open ports on any IP/domain)
-- 🌐 Subdomain Finder (using DNS brute-force)
+- 🌐 Subdomain Finder (using DNS brute-force) and Directory finder also help to by pass 403 error
 - 🔐 Hash Cracker (crack MD5, SHA1, SHA256 hashes using dictionary attack)
 - 🖼️ Background Remover (remove image backgrounds)
 - 📤 Gmail Sender with Attachment
@@ -89,6 +89,8 @@ python anything.py
 -"Open Zoom"
 
 -"subdomain"
+
+-"find directory"
 
 -"scan"
 
