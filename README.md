@@ -16,18 +16,18 @@ A Python-based desktop voice assistant that uses speech recognition, text-to-spe
 - 🌐 Subdomain Finder (using DNS brute-force) and Directory Finder — helps bypass 403 errors
 - 🔐 Hash Cracker (crack MD5, SHA1, SHA256 using dictionary attack)
 - 🖼️ Background Remover (remove image backgrounds)
-- 📤 Gmail Sender with Attachment
+- 📤 Gmail Sender with Attachment<br>
  - 🔑 Requires SMTP credentials setup (e.g., smtp.gmail.com)
 - 🔑 Secure Password Generator (generate strong passwords with voice command, store to file)
 - 💬 Chat with a Local LLM via Ollama
 - 🧩 Desktop App Control (open/close apps like Zoom, browsers, etc.)
-- 🔍 Reverse Engineering Tool using angr
+- 🔍 Reverse Engineering Tool using angr<br>
  - 🧠 Automatically finds passwords or keys from binaries with symbolic execution, voice feedback, and result logging
-  ---
-- 📡 Morse Code Support
- - 🔤 Encode text to Morse (with voice + beep)
- - 🔁 Decode Morse to text (with voice)
- - 🎧 Audio feedback: Dots and dashes played as beeps
+  
+- 📡 Morse Code Support<br>
+ - 🔤 Encode text to Morse (with voice + beep)<br>
+ - 🔁 Decode Morse to text (with voice)<br>
+ - 🎧 Audio feedback: Dots and dashes played as beeps<br>
 
 ---
 
