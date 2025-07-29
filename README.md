@@ -23,6 +23,7 @@ A Python-based desktop voice assistant that uses speech recognition, text-to-spe
 - 🧩 Desktop App Control (open/close apps like Zoom, browsers, etc.)
 - 🔍 Reverse Engineering Tool using angr
  - 🧠 Automatically finds passwords or keys from binaries with symbolic execution, voice feedback, and result logging
+  ---
 - 📡 Morse Code Support
  - 🔤 Encode text to Morse (with voice + beep)
  - 🔁 Decode Morse to text (with voice)
