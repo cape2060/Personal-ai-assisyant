@@ -19,16 +19,14 @@ A Python-based desktop voice assistant that uses speech recognition, text-to-spe
 - 📤 Gmail Sender with Attachment<br>
  - 🔑 Requires SMTP credentials setup (e.g., smtp.gmail.com)
 - 🔑 Secure Password Generator (generate strong passwords with voice command, store to file)
-- 💬 Chat with a Local LLM via Ollama
 - 🧩 Desktop App Control (open/close apps like Zoom, browsers, etc.)
 - 🔍 Reverse Engineering Tool using angr<br>
  - 🧠 Automatically finds passwords or keys from binaries with symbolic execution, voice feedback, and result logging
-  
 - 📡 Morse Code Support<br>
  - 🔤 Encode text to Morse (with voice + beep)<br>
  - 🔁 Decode Morse to text (with voice)<br>
  - 🎧 Audio feedback: Dots and dashes played as beeps<br>
-
+- 💬 Chat with a Local LLM via Ollama
 ---
 
 ## 🛠️ Installation
@@ -99,6 +97,8 @@ python anything.py
 -"find directory"
 
 -"scan"
+
+-"morse code "
 
 -"cracking hash"
 
