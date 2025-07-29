@@ -111,7 +111,7 @@ python anything.py
 -"reverse engineering"
 
 -"Hello Alexa" → Starts chatting with LLaMA via Ollama
-### 🧾 Supported Commands
+### 🧾 Supported Example command Commands
 
 | Voice Command         | Example               | Description                          |
 |-----------------------|-----------------------|------------------------------------|
