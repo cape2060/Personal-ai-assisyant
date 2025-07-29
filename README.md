@@ -6,22 +6,27 @@ A Python-based desktop voice assistant that uses speech recognition, text-to-spe
 
 ## 🚀 Features
 
-- 🎙️ Voice command support (Nepali-accented English: `en-ne`)
+- 🎙️ Voice command support (Nepali-accented English: en-ne)
 - 🔊 Text-to-speech (TTS) with customizable voice
 - 🌐 Open websites like YouTube, Facebook, Instagram, etc.
 - 📅 Tell current time and date
 - 📚 Wikipedia search (short summary)
-- 🎵 Play YouTube videos using `pywhatkit`
+- 🎵 Play YouTube videos using pywhatkit
 - 🛡️ Port Scanner (find open ports on any IP/domain)
-- 🌐 Subdomain Finder (using DNS brute-force) and Directory finder also help to by pass 403 error
-- 🔐 Hash Cracker (crack MD5, SHA1, SHA256 hashes using dictionary attack)
+- 🌐 Subdomain Finder (using DNS brute-force) and Directory Finder — helps bypass 403 errors
+- 🔐 Hash Cracker (crack MD5, SHA1, SHA256 using dictionary attack)
 - 🖼️ Background Remover (remove image backgrounds)
 - 📤 Gmail Sender with Attachment
-      for this first you need to make an smtp.gmail.com account and password then use that credential in this script.
-- 🔑 Secure Password Generator (generate strong random passwords with voice command and store in file with user define length of passowrd)
-- 💬 Chat with a local LLM via [Ollama](https://ollama.com/)
-- 🧩 Open and close desktop applications (Zoom, browser, etc.)
-- 🔍 Reverse Engineering Tool: Automatically find passwords or keys inside binaries using symbolic execution with angr, featuring voice feedback, output saving, and timed analysis.
+ - 🔑 Requires SMTP credentials setup (e.g., smtp.gmail.com)
+- 🔑 Secure Password Generator (generate strong passwords with voice command, store to file)
+- 💬 Chat with a Local LLM via Ollama
+- 🧩 Desktop App Control (open/close apps like Zoom, browsers, etc.)
+- 🔍 Reverse Engineering Tool using angr
+ - 🧠 Automatically finds passwords or keys from binaries with symbolic execution, voice feedback, and result logging
+- 📡 Morse Code Support
+ - 🔤 Encode text to Morse (with voice + beep)
+ - 🔁 Decode Morse to text (with voice)
+ - 🎧 Audio feedback: Dots and dashes played as beeps
 
 ---
 
