@@ -1,6 +1,6 @@
 # 🧠 Alexa Voice Assistant (Offline + Voice Commands)
 
-A Python-based desktop voice assistant that uses speech recognition, text-to-speech, and local AI (via [Ollama](https://ollama.com/)) to perform tasks like browsing the web, playing YouTube videos, checking the date/time, searching Wikipedia, and interacting with a local LLM like LLaMA 3.It also includes hacking/utility tools like a port scanner, subdomain finder,hash cracking, and background remover.
+A Python-based desktop voice assistant that uses speech recognition, text-to-speech, and local AI (via [Ollama](https://ollama.com/)) to perform tasks like browsing the web, playing YouTube videos, checking the date/time, searching Wikipedia, and interacting with a local LLM like LLaMA 3.It also includes hacking/utility tools like a port scanner, subdomain finder,hash cracking, and background remover and many more.
 
 ---
 
