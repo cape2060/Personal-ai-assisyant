@@ -17,7 +17,7 @@ A Python-based desktop voice assistant that uses speech recognition, text-to-spe
 - 🔐 Hash Cracker (crack MD5, SHA1, SHA256 using dictionary attack)
 - 🖼️ Background Remover (remove image backgrounds)
 - 📤 Gmail Sender with Attachment<br>
- - 🔑 Requires SMTP credentials setup (e.g., smtp.gmail.com)
+ <br>- 🔑 Requires SMTP credentials setup (e.g., smtp.gmail.com)
 - 🔑 Secure Password Generator (generate strong passwords with voice command, store to file)
 - 🧩 Desktop App Control (open/close apps like Zoom, browsers, etc.)
 - 🔍 Reverse Engineering Tool using angr<br>
