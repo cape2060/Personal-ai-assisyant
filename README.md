@@ -24,8 +24,8 @@ A Python-based desktop voice assistant that uses speech recognition, text-to-spe
  - 🧠 Automatically finds passwords or keys from binaries with symbolic execution, voice feedback, and result logging
 - 📡 Morse Code Support<br>
  - 🔤 Encode text to Morse (with voice + beep)<br>
- - 🔁 Decode Morse to text (with voice)<br>
- - 🎧 Audio feedback: Dots and dashes played as beeps<br>
+ - 🔁 Decode Morse to text (with voice)
+ <br>- 🎧 Audio feedback: Dots and dashes played as beeps<br>
 - 💬 Chat with a Local LLM via Ollama
 ---
 
