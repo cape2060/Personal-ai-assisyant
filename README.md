@@ -113,15 +113,16 @@ python anything.py
 -"Hello Alexa" → Starts chatting with LLaMA via Ollama
 ### 🧾 Supported Commands
 
-Voice Command           Example	Description
-"Open YouTube"	        Launch YouTube in Firefox
-"Play [song name]"	    Play a song/video on YouTube
-"Search [topic]"	      Gives a short Wikipedia summary
-"What time is it"	      Current time
-"What is today’s date"	Current date
-"Open Zoom"	            Starts Zoom
-"Close Zoom"	          Closes Zoom app
-"Close browser"	        Closes Microsoft Edge
-"Hello Alexa"         	Starts AI conversation via Ollama
-"Exit"	                Exits the assistant
+| Voice Command         | Example               | Description                          |
+|-----------------------|-----------------------|------------------------------------|
+| "Open YouTube"        | Launch YouTube in Firefox   | Opens YouTube in Firefox browser    |
+| "Play [song name]"    | Play a song/video on YouTube| Plays requested song or video       |
+| "Search [topic]"      | Gives a short Wikipedia summary | Provides a brief Wikipedia summary  |
+| "What time is it"     | Current time          | Tells the current time              |
+| "What is today’s date"| Current date          | Tells today’s date                  |
+| "Open Zoom"           | Starts Zoom           | Launches the Zoom application       |
+| "Close Zoom"          | Closes Zoom app       | Closes the Zoom application         |
+| "Close browser"       | Closes Microsoft Edge | Closes the browser (Microsoft Edge)|
+| "Hello Alexa"         | Starts AI conversation via Ollama | Begins chat with local AI assistant |
+| "Exit"                | Exits the assistant   | Quits the assistant program         |
 
