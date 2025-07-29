@@ -18,7 +18,7 @@ from gmail import data
 from brutforce import details, brutforce
 from dirfinder import wordset, bypass403 , ok_200, forbidden_403
 from autorevengi import check, check1
-
+from morse import seperator1, seperator
 
 listener =sr.Recognizer()
 
@@ -280,6 +280,22 @@ def main():
                 print("\033[92mStarting reverse engineering...")
                 bolne("Starting reverse engineering...")    
                 check1(path,address)
+        elif "morse " in command:
+            print("ENter what you want sentence to morse code  or morse code to sentence (stm/mts):")
+            bolne("Enter what you want sentence to morse code or morse code to sentence (stm/mts):")
+            choice=input().lower().strip()
+            if choice == 'stm':
+                print("Enter the sentence:")
+                bolne("Enter the sentence:")
+                sen=input()
+                seperator1(sen)
+            
+            elif choice == 'mts':
+                print("Enter the morse code each word seperated by '/' (eg: .. / .. /):")
+                bolne("Enter the morse code each word seperated by '/' (example: .. / .. /):")
+                code=input()
+                
+                seperator(code)
         elif "close zoom" in command:
             close("Zoom.exe")
         elif "close browser" in command:
